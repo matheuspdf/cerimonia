@@ -1,0 +1,279 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cerimônia</title>
+  <!-- Importando Libre Baskerville -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #fdfdfb;
+      font-family: 'Libre Baskerville', serif;
+      color: #2c2c2c;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    /* ====== Cabeçalho ====== */
+    header {
+      padding: 80px 20px 50px;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 3.4em;
+      margin-bottom: 15px;
+      letter-spacing: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #004d00, #228b22);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .ornamento {
+      width: 120px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #006400, transparent);
+      margin: 10px auto 30px;
+      border-radius: 2px;
+    }
+
+    .nomes {
+      font-size: 2.4em;
+      font-weight: 700;
+      margin-bottom: 40px;
+      background: linear-gradient(90deg, #004d00, #006400, #228b22);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h2 {
+      font-size: 1.25em;
+      font-style: italic;
+      max-width: 750px;
+      margin: 0 auto;
+      padding: 20px 25px;
+      color: #555;
+      font-weight: 400;
+      border: 1px solid #e6e6e6;
+      border-radius: 10px;
+      background: #ffffff;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.03);
+    }
+
+    /* ====== Conteúdo ====== */
+    main {
+      max-width: 850px;
+      margin: 70px auto;
+      padding: 0 20px;
+    }
+
+    details {
+      margin: 32px auto;
+      border: 1px solid #e5e5e5;
+      border-radius: 16px;
+      background: #ffffff;
+      padding: 22px 26px;
+      max-width: 95%;
+      text-align: left;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.05);
+      transition: all 0.4s ease;
+      overflow: hidden;
+    }
+
+    details:hover {
+      border-color: #b8d3b8;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+      transform: translateY(-3px);
+    }
+
+    summary {
+      cursor: pointer;
+      font-size: 1.4em;
+      font-weight: 700;
+      color: #004d00;
+      list-style: none;
+      text-align: center;
+      padding: 8px 0;
+      transition: color 0.3s ease;
+    }
+
+    summary:hover {
+      color: #002d00;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details[open] {
+      background: #f9fdf9;
+      border-color: #b8d3b8;
+    }
+
+    details pre {
+      white-space: pre-wrap;
+      font-family: inherit;
+      font-size: 1em;
+      color: #333;
+      margin-top: 20px;
+      text-align: center;
+      line-height: 1.75;
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: all 0.4s ease;
+    }
+
+    details[open] pre {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ====== Rodapé ====== */
+    footer {
+      margin-top: 80px;
+      padding: 30px 20px;
+      font-size: 0.9em;
+      color: #777;
+      border-top: 1px solid #e5e5e5;
+    }
+
+    footer em {
+      color: #555;
+    }
+
+    /* ====== Responsivo ====== */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.5em;
+      }
+      .nomes {
+        font-size: 1.8em;
+      }
+      summary {
+        font-size: 1.15em;
+      }
+      details {
+        padding: 18px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cerimônia</h1>
+    <div class="ornamento"></div>
+    <div class="nomes">Agnes & Matheus</div>
+    <h2>
+      "Não há ninguém como o Senhor, nosso Deus, que tem o seu trono nas alturas, 
+      mas se inclina para ver o que há no céu e na terra.” <br> 
+      <em>Salmos 113:5,6</em>
+    </h2>
+  </header>
+
+  <main>
+    <details>
+      <summary>155 · Castelo Forte</summary>
+      <pre>
+Castelo forte é nosso Deus, espada e bom escudo!
+Com seu poder defende os seus em todo transe agudo.
+Com fúria pertinaz persegue Satanás
+Com ânimo cruel, mas forte é o Deus fiel,
+Igual não há na terra.
+A força do homem nada faz, sozinho está perdido!
+Mas nosso Deus socorro traz em seu Filho escolhido.
+Sabeis quem é? Jesus, o que venceu na cruz,
+Senhor dos altos céus, e sendo o próprio Deus,
+Triunfa na batalha.
+Se nos quisessem devorar demônios não contados,
+Não nos iriam derrotar nem ver-nos assustados.
+O príncipe do mal, com seu plano infernal,
+Já condenado está: vencido cairá
+Por uma só palavra.
+De Deus o verbo ficará, sabemos com certeza,
+E nada nos assustará com Cristo por defesa!
+Se temos de perder família, bens, prazer,
+Se tudo se acabar e a morte enfim chegar,
+Com ele reinaremos!
+      </pre>
+    </details>
+
+    <details>
+      <summary>026 · Louvor ao Deus Grandioso</summary>
+      <pre>
+Senhor meu Deus, quando eu, maravilhado,
+Os grandes feitos vejo da tua mão,
+Estrelas, mundos e trovões rolando,
+A proclamar teu nome na amplidão,
+Canta minh’alma, então, a ti Senhor:
+Grandioso és tu, grandioso és tu! (bis)
+Quando atravesso bosques e florestas
+Ouvindo, à brisa, pássaros cantar,
+Ou vejo, além, montanhas altaneiras
+O teu poder e glória proclamar;
+Quando percebo que, na cruz maldita,
+Por teu amor, Jesus morreu por mim
+E me livrou do jugo do pecado,
+Ali vertendo sangue carmesim;
+Quando, afinal, em resplendor e glória,
+Jesus abrir as portas da mansão,
+Eu hei de estar de joelhos entre os santos,
+Na mais humilde e vera adoração,
+E então cantar eternamente ali:
+Grandioso és tu, grandioso és tu! (bis)
+      </pre>
+    </details>
+
+    <details>
+      <summary>032 · Tu és fiel</summary>
+      <pre>
+Tu és fiel, Senhor, ó Pai celeste,
+Teus filhos sabem que não falharás!
+Nunca mudaste, tu nunca faltaste,
+Tal como eras tu sempre serás.
+Tu és fiel, Senhor! Tu és fiel, Senhor!
+Dia após dia, com bênçãos sem fim,
+Tua mercê nos sustenta e nos guarda;
+Tu és fiel, Senhor; fiel assim.
+Flores e frutos, montanhas e mares,
+Sol, lua, estrelas brilhando no céu,
+Tudo criaste na terra e nos ares,
+Para louvar-te, Senhor, que és fiel.
+Pleno perdão tu dás! Que segurança!
+Cada momento me guias, Senhor,
+E no porvir, oh! Que doce esperança,
+Desfrutarei do teu rico favor.
+Amém.
+      </pre>
+    </details>
+
+    <details>
+      <summary>022 · Os Céus Proclamam</summary>
+      <pre>
+Altamente os céus proclamam seu divino Criador!
+Anuncia o firmamento tuas obras, ó Senhor!
+Incessantes, noite e dia dão sinais do teu poder;
+Sem palavras, proclamando Deus excelso no saber!
+Majestoso, o sol caminha pelos céus, com resplendor!
+Exultando em seu percurso, enche o mundo de calor.
+Todo o vasto universo canta, em coro, teu louvor!
+E a nós vem doce ensino da Palavra do Senhor.
+Tua Lei — quão preciosa! — brilha mais que a clara luz;
+Esclarece as nossas mentes, guia as almas a Jesus,
+Em tua graça meditando, cantarei, ó bom Senhor,
+E será na minha boca agradável o teu louvor.
+Amém.
+      </pre>
+    </details>
+  </main>
+
+  <footer>
+    <p><em>“Tudo deve ser feito com decência e ordem.”</em> — 1 Coríntios 14:40</p>
+    <p>Agnes & Matheus — 2025</p>
+  </footer>
+</body>
+</html>
