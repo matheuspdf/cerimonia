@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -18,56 +18,72 @@
     }
 
     header {
-      padding: 80px 20px 50px;
+      padding: 60px 20px 30px; /* ligeiramente mais compacto */
       position: relative;
     }
 
     h1 {
-      font-size: 3.4em;
-      margin-bottom: 15px;
-      letter-spacing: 4px;
+      font-size: 1.1em; /* menor para evitar repetir o cabeçalho anterior */
+      margin: 0 auto 10px;
+      letter-spacing: 2px;
       font-weight: 700;
       text-transform: uppercase;
-      background: linear-gradient(90deg, #004d00, #228b22);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: #004d00;
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 8px;
+      background: linear-gradient(90deg, rgba(0,77,0,0.06), rgba(34,139,34,0.04));
+      border: 1px solid rgba(0,77,0,0.06);
     }
 
     .ornamento {
       width: 120px;
       height: 2px;
       background: linear-gradient(90deg, transparent, #006400, transparent);
-      margin: 10px auto 30px;
+      margin: 18px auto;
       border-radius: 2px;
     }
 
     .nomes {
-      font-size: 2.4em;
+      font-size: 2.2em;
       font-weight: 700;
-      margin-bottom: 40px;
+      margin-bottom: 8px;
       background: linear-gradient(90deg, #004d00, #006400, #228b22);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
-    h2 {
-      font-size: 1.25em;
+    .versiculo {
+      font-size: 1.05em;
       font-style: italic;
       max-width: 750px;
-      margin: 0 auto;
-      padding: 20px 25px;
+      margin: 10px auto 18px;
+      padding: 14px 20px;
       color: #555;
       font-weight: 400;
-      border: 1px solid #e6e6e6;
+      border: 1px solid #f0f0f0;
       border-radius: 10px;
       background: #ffffff;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.03);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    }
+
+    .hora {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid #dfeee0;
+      background: linear-gradient(90deg, #f7fdf7, #ffffff);
+      color: #004d00;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
     }
 
     main {
       max-width: 850px;
-      margin: 70px auto;
-      padding: 0 20px;
+      margin: 50px auto;
+      padding: 0 20px 80px;
     }
 
     details {
@@ -91,7 +107,7 @@
 
     summary {
       cursor: pointer;
-      font-size: 1.4em;
+      font-size: 1.2em; /* levemente reduzido */
       font-weight: 700;
       color: #004d00;
       list-style: none;
@@ -100,18 +116,10 @@
       transition: color 0.3s ease;
     }
 
-    summary:hover {
-      color: #002d00;
-    }
+    summary:hover { color: #002d00; }
+    summary::-webkit-details-marker { display: none; }
 
-    summary::-webkit-details-marker {
-      display: none;
-    }
-
-    details[open] {
-      background: #f9fdf9;
-      border-color: #b8d3b8;
-    }
+    details[open] { background: #f9fdf9; border-color: #b8d3b8; }
 
     details pre {
       white-space: pre-wrap;
@@ -126,10 +134,7 @@
       transition: all 0.4s ease;
     }
 
-    details[open] pre {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    details[open] pre { opacity: 1; transform: translateY(0); }
 
     footer {
       margin-top: 80px;
@@ -139,23 +144,14 @@
       border-top: 1px solid #e5e5e5;
     }
 
-    footer em {
-      color: #555;
-    }
+    footer em { color: #555; }
 
     @media (max-width: 600px) {
-      h1 {
-        font-size: 2.5em;
-      }
-      .nomes {
-        font-size: 1.8em;
-      }
-      summary {
-        font-size: 1.15em;
-      }
-      details {
-        padding: 18px 20px;
-      }
+      h1 { font-size: 0.95em; }
+      .nomes { font-size: 1.8em; }
+      .versiculo { font-size: 0.98em; padding: 12px 14px; }
+      summary { font-size: 1.05em; }
+      details { padding: 18px 20px; }
     }
   </style>
 </head>
@@ -164,11 +160,14 @@
     <h1>Cerimônia</h1>
     <div class="ornamento"></div>
     <div class="nomes">Agnes & Matheus</div>
-    <h2>
-      "Não há ninguém como o Senhor, nosso Deus, que tem o seu trono nas alturas, 
-      mas se inclina para ver o que há no céu e na terra.” <br> 
+    <div class="versiculo">
+      "Não há ninguém como o Senhor, nosso Deus, que tem o seu trono nas alturas,
+      mas se inclina para ver o que há no céu e na terra.” <br>
       <em>Salmos 113:5,6</em>
-    </h2>
+    </div>
+
+    <!-- Menção clara do horário -->
+    <div class="hora">O culto  começará pontualmente às 18h</div>
   </header>
 
   <main>
@@ -280,6 +279,7 @@ E será na minha boca agradável o teu louvor.
 Amém.
       </pre>
     </details>
+
   </main>
 
   <footer>
